@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
     public static String MESSAGE = "Message";
     public static int MESSAGE_RECEIVE = 1;
 
-    //    private Button button;
-//    @BindView(R.id.button)
-//    Button button;
-//    @BindView(R.id.received_message)
-//    TextView message;
+//    private Button button;
+    @BindView(R.id.button)
+    Button button;
+    @BindView(R.id.received_message)
+    TextView message;
 
 
     @Override
@@ -41,46 +42,48 @@ public class MainActivity extends AppCompatActivity {
 //                    @Override
 //                    public void onClick(View view) {
 //                        Log.d(TAG, "Click Button!");
+//                        Toast.makeText(getApplicationContext(), "Click Button!", Toast.LENGTH_LONG).show();
 //                    }
 //                });
 
 
 //       Step Three: Show how to use Butter Knife to add listener to a button
-//        ButterKnife.bind(this);
+        ButterKnife.bind(this);
     }
 
-//    @OnClick(R.id.button)
-//    public void outputLog() {
-//        Log.d(TAG, "Click Button!");
+    @OnClick(R.id.button)
+    public void outputLog() {
+        Log.d(TAG, "Click Button -- Butter Knife!");
+        Toast.makeText(this, "Click Button -- Butter Knife!", Toast.LENGTH_LONG).show();
 
 //        Explicit Intents
 //        Intent intent = new Intent(this, Main2Activity.class);
 //        intent.putExtra(MESSAGE, "Hello from the first activity.");
 //        startActivity(intent);
-
-//        Implicit Intents
+//
+////        Implicit Intents
 //        Intent intent = new Intent();
 //        intent.setAction("SecondActivity");
 //        intent.putExtra(MESSAGE, "Hello from the first activity.");
 //        startActivity(intent);
-
+//
 //        Start Activity for Results
-//        Intent intent = new Intent();
-//        intent.setAction("SecondActivity");
-//        intent.putExtra(MESSAGE, "Hello from the first activity.");
-//        startActivityForResult(intent, MESSAGE_RECEIVE);
-//    }
+        Intent intent = new Intent();
+        intent.setAction("SecondActivity");
+        intent.putExtra(MESSAGE, "Hello from the first activity.");
+        startActivityForResult(intent, MESSAGE_RECEIVE);
+    }
 
 
 //    Receive Message from Called Activities
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        // Check which request we're responding to
-//        if (requestCode == MESSAGE_RECEIVE) {
-//            if (resultCode==RESULT_OK){
-//                message.setText(data.getStringExtra(Main2Activity.RECEIVED_MESSAGE));
-//            }
-//        }
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // Check which request we're responding to
+        if (requestCode == MESSAGE_RECEIVE) {
+            if (resultCode==RESULT_OK){
+                message.setText(data.getStringExtra(Main2Activity.RECEIVED_MESSAGE));
+            }
+        }
+    }
 
 }
