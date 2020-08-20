@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActivityLifeCycleTest.iml" filepath="$PROJECT_DIR$/ActivityLifeCycleTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp90018-week2-activity-life-cycle.iml" filepath="$PROJECT_DIR$/.idea/modules/comp90018-week2-activity-life-cycle.iml" group="comp90018-week2-activity-life-cycle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week2-activity-life-cycle-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week2-activity-life-cycle-app.iml" group="comp90018-week2-activity-life-cycle/app" />
     </modules>
   </component>
 </project>

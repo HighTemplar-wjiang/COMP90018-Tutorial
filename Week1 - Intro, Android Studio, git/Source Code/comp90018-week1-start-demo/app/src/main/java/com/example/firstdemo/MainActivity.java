@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        Step One: Show how to output Log from Logcat;
-//        Log.d(TAG, "onCreate: " + "This is the first LOG");
+        Log.d(TAG, "onCreate: " + "This is the first LOG");
 
 
 //        Step Two: Show how to add listener to a button;
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, Main2Activity.class);
 //        intent.putExtra(MESSAGE, "Hello from the first activity.");
 //        startActivity(intent);
-//
-////        Implicit Intents
+
+//        Implicit Intents
 //        Intent intent = new Intent();
 //        intent.setAction("SecondActivity");
 //        intent.putExtra(MESSAGE, "Hello from the first activity.");

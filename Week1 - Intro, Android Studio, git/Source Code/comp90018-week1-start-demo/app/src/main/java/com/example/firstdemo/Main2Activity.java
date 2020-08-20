@@ -30,7 +30,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent returnIntent = new Intent();
-        returnIntent.putExtra(RECEIVED_MESSAGE, "Hello from the second activity.");
+        returnIntent.putExtra(RECEIVED_MESSAGE, "Second activity launched successfully.");
         setResult(RESULT_OK, returnIntent);
 
         super.onBackPressed();

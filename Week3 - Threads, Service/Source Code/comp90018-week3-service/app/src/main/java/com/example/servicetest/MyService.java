@@ -50,18 +50,18 @@ public class MyService extends Service {
         EventBus.getDefault().post(new MessageEvent(MessageEvent.SERVICE, "Hello from Service!"));
 
         // Example for implement foreground service
-//        Log.d("MyService", "onCreate executed");
-//        Intent intent = new Intent(this, MainActivity.class);
-//        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
-//        Notification notification = new NotificationCompat.Builder(this)
-//                .setContentTitle("This is content title")
-//                .setContentText("This is content text")
-//                .setWhen(System.currentTimeMillis())
-//                .setSmallIcon(R.mipmap.ic_launcher)
-//                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
-//                .setContentIntent(pi)
-//                .build();
-//        startForeground(1, notification);
+        Log.d("MyService", "onCreate executed");
+        Intent intent = new Intent(this, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
+        Notification notification = new NotificationCompat.Builder(this)
+                .setContentTitle("This is content title")
+                .setContentText("This is content text")
+                .setWhen(System.currentTimeMillis())
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
+                .setContentIntent(pi)
+                .build();
+        startForeground(1, notification);
     }
 
     @Override

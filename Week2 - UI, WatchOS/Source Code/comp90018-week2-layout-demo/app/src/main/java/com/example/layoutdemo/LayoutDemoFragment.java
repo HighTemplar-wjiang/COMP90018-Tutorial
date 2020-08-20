@@ -38,6 +38,8 @@ public class LayoutDemoFragment extends Fragment {
 
         View view = inflater.inflate(layout, container, false);
         ButterKnife.bind(this, view);
+
+        // Bind adapter to list view.
         initializeList(view);
 
         return view;
