@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ServiceTest.iml" filepath="$PROJECT_DIR$/ServiceTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp90018-week3-service.iml" filepath="$PROJECT_DIR$/.idea/modules/comp90018-week3-service.iml" group="comp90018-week3-service" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week3-service-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week3-service-app.iml" group="comp90018-week3-service/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/comp90018-week3-service.iml" filepath="$PROJECT_DIR$/.idea/modules/comp90018-week3-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/comp90018-week3-service.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/comp90018-week3-service.app.iml" />
     </modules>
   </component>
 </project>

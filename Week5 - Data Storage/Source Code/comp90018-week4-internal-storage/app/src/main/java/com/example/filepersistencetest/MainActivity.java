@@ -22,8 +22,8 @@ import java.io.OutputStreamWriter;
 public class MainActivity extends AppCompatActivity {
 
     private EditText edit;
-    private final static String FILE_NAME = "data";
-    private final static String CACHED_FILE_NAME = "cached_data";
+    private final static String FILE_NAME = "my_data_file";
+    private final static String CACHED_FILE_NAME = "my_cached_data";
 
 
     @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         String inputText = edit.getText().toString();
         save(inputText);
-//        saveCache(inputText);
+        saveCache(inputText);
     }
 
     public void save(String inputText) {

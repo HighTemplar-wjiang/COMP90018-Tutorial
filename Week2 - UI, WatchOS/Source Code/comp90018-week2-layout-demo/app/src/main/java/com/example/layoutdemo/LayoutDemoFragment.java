@@ -84,6 +84,7 @@ public class LayoutDemoFragment extends Fragment {
     }
 
     // To generate an array of fruit example for ListView and RecyclerView Demonstration
+    // Here is the place for data retrieving, e.g., database, read a file, etc.
     private ArrayList<Fruit> getFruits() {
         ArrayList<Fruit> fruits = new ArrayList<>();
         fruits.add(new Fruit(R.drawable.apple, "Apple"));
